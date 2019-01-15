@@ -1,0 +1,15 @@
+{
+  "name": "demolishedsequence",
+  "version": "1.0.0",
+  "description": "SVG sequence framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example-build" :"webpack index.js -o build.js --watch"
+  },
+  "keywords": [
+    "SVG"
+  ],
+  "author": "Magnus Thor",
+  "license": "MIT"
+}
