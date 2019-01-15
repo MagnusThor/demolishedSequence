@@ -1,12 +1,12 @@
-import { ISequenceElement } from "./ISequenceElement";
-import { Node } from "./Node";
+import { SequenceNode } from "./SequenceNode";
+import { ISequenceElement } from './ISequenceElement';
 export class Connector implements ISequenceElement {
     toSVG(): string {
         throw "Not implemented";
     }
-    constructor(public a: Node, b: Node) {
+    constructor(public a: SequenceNode, b: SequenceNode) {
     }
-    static create(a: Node, b: Node): Connector {
+    static create(a: SequenceNode, b: SequenceNode): Connector {
         return new this(a, b);
     }
 }

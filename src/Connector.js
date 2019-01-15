@@ -1,15 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Connector = (function () {
-    function Connector(a, b) {
+class Connector {
+    constructor(a, b) {
         this.a = a;
     }
-    Connector.prototype.toSVG = function () {
+    toSVG() {
         throw "Not implemented";
-    };
-    Connector.create = function (a, b) {
+    }
+    static create(a, b) {
         return new this(a, b);
-    };
-    return Connector;
-}());
+    }
+}
 exports.Connector = Connector;
